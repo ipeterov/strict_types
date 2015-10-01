@@ -4,11 +4,11 @@ Repository for `strict_types` lib (consists mostly of one decorator) I created f
 ## Usage
 You can import it
 ```python
-import strict_types
+from strict_types import strict_types
 ```
 then use it as a decorator
 ```python
-@strict_types.strict_types
+@strict_types
 def repeat_str(mystr: str, times: int):
     return mystr * times
 ```

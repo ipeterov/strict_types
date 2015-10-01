@@ -1,5 +1,9 @@
 # strict_types
-Repository for `strict_types` lib (consists mostly of one decorator) I created for python that implements strict typing using type-hints. It works only with python 3.5 for now, though I think it's pssible to make it work with any version of python using function annotations syntax.
+This is `strict_types` lib (which consists mostly of one decorator) I created for python that implements strict typing using type-hints. It works only with python 3.5 for now, though I think it's pssible to make it work with any version of python using function annotations syntax.
+
+## Installation
+It's quite typical:
+`pip3 install git+git://github.com/ipeterov/strict_types@maste`
 
 ## Usage
 You can import it
@@ -22,6 +26,7 @@ Traceback (most recent call last):
 TypeError: Type of times is <class 'str'> and not <class 'int'>
 
 ```
+
 ## Using [abc](https://docs.python.org/3/library/abc.html) (abstract base classes)
 Though it is possible to use it to restrict functions input to only one type, e.g.
 ```python

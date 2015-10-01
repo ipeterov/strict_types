@@ -2,8 +2,15 @@
 This is `strict_types` lib (which consists mostly of one decorator) I created for python that implements strict typing using type-hints. It works only with python 3.5 for now, though I think it's pssible to make it work with any version of python using function annotations syntax.
 
 ## Installation
-It's quite typical:
-`pip3 install git+git://github.com/ipeterov/strict_types@maste`
+You can try installing it via pip (that doesn't work for my ubuntu machine)
+```
+pip3 install git+git://github.com/ipeterov/strict_types@maste
+```
+or by downloading .tar.gz file, unpacking it and running
+```
+python3 setup.py install
+```
+in the folder that was created after unpacking. This is not the best option, but it works on all my machines.
 
 ## Usage
 You can import it

@@ -1,4 +1,5 @@
 from typing import get_type_hints
+from typing import List
 
 def strict_types(function):
     def type_checker(*args, **kwargs):
@@ -15,7 +16,7 @@ def strict_types(function):
         result = function(*args, **kwargs)
 
         if 'return' in hints:
-            if type(result) != hints['return']:
+            if not isinstance(result, hints['return']):
                 raise TypeError('Type of result is {} and not {}'.format(type(result), hints['return']))
 
         return result

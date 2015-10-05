@@ -1,5 +1,4 @@
 from typing import get_type_hints
-from typing import List
 
 def strict_types(function):
     def type_checker(*args, **kwargs):
